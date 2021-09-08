@@ -25,15 +25,15 @@ module.exports = function (app) {
     },
     idPerson: {
       type: DataTypes.INTEGER,
-      allowNull: false
+      allowNull: true
     },
     namePerson: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: true
     },
     firmImage: {
       type: DataTypes.TEXT,
-      allowNull: false
+      allowNull: true
     }
   }, {
     hooks: {

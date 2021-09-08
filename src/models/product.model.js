@@ -8,16 +8,20 @@ module.exports = function (app) {
   const product = sequelizeClient.define('product', {
     
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     description: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     price: {
       type: DataTypes.DECIMAL,
       allowNull: false
+    },
+    image: {
+      type: DataTypes.TEXT,
+      allowNull: true
     }
   }, {
     hooks: {

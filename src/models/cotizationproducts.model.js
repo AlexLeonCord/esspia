@@ -22,7 +22,7 @@ module.exports = function (app) {
       allowNull: false
     },
     nameProduct: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     price: {
